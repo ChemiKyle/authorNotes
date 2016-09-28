@@ -14,7 +14,7 @@ list_of_authors =[
 "Kurt Vonnegut"
 ]
 
-kindleNotes = kindleNotes.txt
+kindleNotes = "kindleNotes.txt"
 
 for i in list_of_authors:
 	splitName = i.split(' ') # Split each list element (i.e. each author) by spaces to isolate first and last name
