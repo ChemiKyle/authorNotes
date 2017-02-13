@@ -10,3 +10,5 @@ This should work for anything that runs bash by default, I've only tested on Deb
 TODO: Format the quotes into a SQL database by author and book, so I can display them on my dashboard and not relieve my amnesia of the same book two days in a row.
 
 Sample output for Kurt Vonnegut: kurtVonnegutNotes.txt
+
+I'm currently making this into a webapp, the scripts will function as normal if you stumble on this and want to use it in your own computer.
