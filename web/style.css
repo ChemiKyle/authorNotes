@@ -91,4 +91,6 @@ body{
 
 .left-page{
 	padding: 0 0 0 4%;
+	float: left;
+	width: 46%;
 }
