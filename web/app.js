@@ -44,16 +44,9 @@ var main = function () {
 				dictionary[authorName][bookTitle]['quote' + i] = quote;
 			}
 			catch (err) { //Will need to create blank dictioary entries if first time seeing author/book
-				// var writeBookSpot = function() {
-				// 		dictionary[authorName][bookTitle] = {};
-				// 		dictionary[authorName][bookTitle]['quote' + i] = quote;
-				// };
 				// Firefox
 					if (err.message === 'dictionary[authorName] is undefined') {
 						dictionary[authorName] = {};
-						var writeBookSpot = function() {
-						dictionary[authorName][bookTitle] = {};
-						dictionary[authorName][bookTitle]['quote' + i] = quote;	 };
 						writeBookSpot();	
 					}
 					else if (err.message === 'dictionary[authorName][bookTitle] is undefined') {
@@ -70,8 +63,7 @@ var main = function () {
 			};
 			// finally {
 			// 	dictionary[authorName] = {};
-			// 	dictionary[authorName][bookTitle] = {};
-			// 	dictionary[authorName][bookTitle]['quote' + i] = quote;	
+			// 	writeBookSpot();	
 			// };
 		};
 	return dictionary;
