@@ -13,7 +13,6 @@ var main = function () {
 
 	};
 
-// 	This function works, but skips the first 2 quotes from each author
 	var dataCreator = function(text) {
 		var splitup = text.split('==========');
 		for (var i = 0; i < splitup.length - 1; i++) {
@@ -22,18 +21,15 @@ var main = function () {
 			var authorLine = current[1].split('(');
 			var bookTitle = authorLine[0].trim();
 			var authorName = authorLine.slice(-1)[0].replace(')', '');
-			// console.log(bookTitle, authorName);
 			var quote = current[4].toString();
-			// console.log(quote);
 			try {
 				dictionary[authorName][bookTitle]['quote' + i] = quote;
 			}
 			catch (err) {
 				if (err.message === 'dictionary[authorName] is undefined') {
 					dictionary[authorName] = {};
-				}
-				else if (err.message === 'dictionary[authorName][bookTitle] is undefined') {
 					dictionary[authorName][bookTitle] = {};
+					dictionary[authorName][bookTitle]['quote' + i] = quote;
 				};
 			};
 		};
