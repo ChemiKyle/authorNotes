@@ -23,6 +23,14 @@ with open(notes_filename, 'r') as f:
 		if clean_name not in list_of_authors:
 			list_of_authors.append(clean_name)
 
+splitup = []
+
+with open(notes_filename, 'r') as f:
+	f = f.read()
+	big_info_list = f.split('==========') # Splits into tuples of all quote info
+	for i in big_info_list:
+		i = i.split('\n')
+		splitup.append(i)
 
 big_dict = {}
 auth_and_book_list = []
@@ -30,18 +38,19 @@ auth_and_book_list = []
 for author in list_of_authors:
 	quote_num = 0
 	big_dict[str(author)] = {}
-	with open(notes_filename, 'r+') as f:
-		for line in f:
-			if str(author) in line:
-				book_name = line.split('(')[0].strip()
-				try:
-					print(big_dict[str(author)][book_name])
-				except:
-					big_dict[str(author)][book_name] = {}
-				big_dict[str(author)][book_name].update({
-				'quote' + str(quote_num): 'coming soon'
-				})
-				quote_num += 1
+	for note_block in splitup[1:-1]: # Have to skip the first quote block until I can figure out a workaround in an issue where unicode is appended prior to the first character, last block is empty 
+		book_and_author = str(note_block[1]) # Index one is formatted thusly: Book Title (Author Name)
+		if str(author) in book_and_author:
+			book_name = book_and_author.split('(')[0].strip()
+			quote = str(note_block[4])
+			try:
+				print(big_dict[str(author)][book_name])
+			except:
+				big_dict[str(author)][book_name] = {}
+			big_dict[str(author)][book_name].update({
+			'quote' + str(quote_num): quote
+			})
+			quote_num += 1
 
 # print(auth_and_book_list[1:])
 jayson = json.dumps(big_dict)
