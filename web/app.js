@@ -75,11 +75,14 @@ var main = function () {
 	$('button#process').on('click', function() {
 		dictionary = dataCreator();
 		console.log(dictionary);
-		// var dictString = JSON.stringify(dictionary);
-		// console.log(dictString);
-		// var $content = $('#author-content p');
-		// $content.fadeOut(500).delay(500).empty();
-		// $content.append('<p>'+dictString+'</p>').delay(500).fadeIn(500);
+		var dictString = JSON.stringify(dictionary);
+		console.log(dictString);
+
+		var $content = $('#author-content p');
+
+		$content.fadeOut('fast', function () {
+		$content.empty().append('<p>'+dictString+'</p>').delay(500).fadeIn(500);
+		});
 	});
 
 };
