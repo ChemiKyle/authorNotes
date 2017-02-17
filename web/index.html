@@ -12,9 +12,8 @@
 	<p>Do you ever highlight memorable passages on your kindle, but find it cumbersome to go back over them?</p>
 	<p>We can fix that for you and split your file up by author and book for easier perusal.</p>
 	<p>Just upload your file below and we'll work our magic.</p>
-	<form action="" method="post" enctype="multipart/form-data">
-		<input type="file" name='kindleFile' accept='.txt'>
-		<button id="file-submit" type="submit">Submit file</button>
+	<input type="file" id="fileInput" />
+	<button id="process">Process file </button>
 	</form>
 	</div>
 
@@ -25,7 +24,7 @@
 	</div>
 	<footer id='bottom-of-book'></footer>
 
-	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-	<script src="fileReadTest.js"></script>
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>

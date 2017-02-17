@@ -1,6 +1,9 @@
 var main = function () {
 	"use strict";
-	
+
+	var dictionary = {};
+	var file = '';
+
 	var clearLeftPage = function() {
 		$("div.left-page").empty();
 	};
@@ -9,16 +12,26 @@ var main = function () {
 		clearLeftPage();
 	});
 
-	var fileParser = function(users-file) {
+	var getText = function() {
+		document.getElementById("fileInput").addEventListener("change", function() {
+			var r = new FileReader();
 
-	};
+			r.onload = function() {
+				file = this.result;
+				console.log(file);
+				return file;
+			}
+			r.readAsText(this.files[0]);
+			});
+		}
 
 	var dataCreator = function(text) {
+		text = file + ''; // Get rid of annoying console error saying split isn't a function
 		var splitup = text.split('==========');
 		for (var i = 0; i < splitup.length - 1; i++) {
 			var current = splitup[i].split('\n');
 			
-			var authorLine = current[1].split('(');
+			var authorLine = current[1].split('('); // First line of each block is Book Title (Author Name)
 			var bookTitle = authorLine[0].trim();
 			var authorName = authorLine.slice(-1)[0].replace(')', '');
 			var quote = current[4].toString();
@@ -37,26 +50,24 @@ var main = function () {
 				};
 			};
 		};
+	return dictionary;
 	};
 
+
+	getText();
+
+	$('button#process').on('click', function() {
+		dataCreator();
+		console.log(dictionary);
+	});
+
+};
+
+$(document).ready(main);
+
 	if (FileReader) {
-
-		var dict = [];
-
-		var fileInput = document.getElementById('file');
-
-		function getText(readFile) {
-			var reader = new FileReader();
-			reader.onload = function(e) {
-				var text = reader.result;
-			}
-			fileDisplayArea.innerText = reader.result;
-			reader.readAsText(readFile);
-		};
+		console.log("Should work")
 	}
 	else {
 		window.alert("Unfortunately the browser you are using won't allow me to read files!");
 	};
-};
-
-$(document).ready(main);
