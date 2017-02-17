@@ -29,7 +29,11 @@ var main = function () {
 				if (err.message === 'dictionary[authorName] is undefined') {
 					dictionary[authorName] = {};
 					dictionary[authorName][bookTitle] = {};
-					dictionary[authorName][bookTitle]['quote' + i] = quote;
+					dictionary[authorName][bookTitle]['quote' + i] = quote;		
+				}
+				else if (err.message === 'dictionary[authorName][bookTitle] is undefined') {
+					dictionary[authorName][bookTitle] = {};
+					dictionary[authorName][bookTitle]['quote' + i] = quote;					
 				};
 			};
 		};
