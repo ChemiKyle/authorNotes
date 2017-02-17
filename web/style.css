@@ -71,7 +71,6 @@ body{
 	background-color: var(--cover-color);
 	margin: 0;
 	padding: 3px;
-	overflow: auto;
 	bottom: 0;
 	left: 0;
 	width: auto;
@@ -81,7 +80,6 @@ body{
 	background-color: var(--cover-color);
 	margin: 0;
 	padding: 3px;
-	overflow: auto;
     position: fixed;
     z-index: 100; 
     bottom: 0; 
@@ -89,8 +87,26 @@ body{
     width: 100%;
 }
 
-.left-page{
+.left-page {
 	padding: 0 0 0 4%;
 	float: left;
 	width: 46%;
+	overflow: auto;
+}
+
+.right-page {
+	padding: 0 2% 0 0;
+	float: right;
+	width: 46%;
+	overflow: auto;
+}
+
+#author-content {
+	padding: 3% 0 0 0;
+	height: 50em;
+	overflow: auto;
+}
+
+input span:hover {
+	cursor: pointer;
 }
