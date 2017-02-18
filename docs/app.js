@@ -97,10 +97,9 @@ var main = function () {
 	getText();
 
 	$('button#process').on('click', function() {
-		dictionary = dataCreator();
+		dataCreator();
 		console.log(dictionary);
 		var dictString = JSON.stringify(dictionary, null, 3);
-		console.log(dictString);
 
 		var $content = $('#author-content p');
 
@@ -114,7 +113,7 @@ var main = function () {
 $(document).ready(main);
 
 	if (FileReader) {
-		console.log("Should work")
+		
 	}
 	else {
 		window.alert("Unfortunately the browser you are using won't allow me to read files!");
