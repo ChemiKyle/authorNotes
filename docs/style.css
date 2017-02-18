@@ -5,15 +5,6 @@
 	/* Color pallette partially derived from http://www.colourlovers.com/palette/1729615/Old_book */
 }
 
-<<<<<<< HEAD
-=======
-@font-face {
-	font-family: 'Literata';
-	src: url('Literata_TTF/literata-regular-webfont.woff') format('woff'),
-		 url('Literata_TTF/literata-regular.tff') format('truetype');
-}
-
->>>>>>> 67f867e6ca4ce92017ce1d40693218dbd6313fd9
 body{
 	background: var(--inner-page-color); /* For browsers that don't support gradients */
 	/* The rest make it look like an old book */
@@ -65,10 +56,6 @@ body{
 		var(--inner-page-color) 98%,
 		var(--edge-page-color) 99.6%,
 		var(--cover-color));
-<<<<<<< HEAD
-=======
-	font-family: 'Literata';
->>>>>>> 67f867e6ca4ce92017ce1d40693218dbd6313fd9
 	margin: 0;
 }
 
