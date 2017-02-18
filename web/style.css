@@ -101,10 +101,15 @@ body{
 	overflow: auto;
 }
 
-#author-content {
+div#author-content {
 	padding: 3% 0 0 0;
-	height: 50em;
+	height: 75vh;
 	overflow: auto;
+}
+
+pre#author-content{
+	white-space: pre-wrap;
+	font-family: inherit;
 }
 
 input span:hover {
