@@ -26,19 +26,43 @@ var main = function () {
 
 	var dataCreator = function(text) {
 		text = file + ''; // Get rid of annoying console error saying split isn't a function
+
+		// Define placeholder variables
+		var authorName = '';
+		var bookTitle = '';
+
 		var splitup = text.split('==========');
-		for (var i = 1; i < splitup.length - 1; i++) { // First value doesn't conform due to lack of leading equal signs
+
+		// First quote must be obtained separately as it does not conform to the same pattern
+		var firstQuoteBlock = splitup[0].split('\n');
+		var authorLine = firstQuoteBlock[0].split('(');
+		var quote = firstQuoteBlock[3];
+
+		var getAuthorAndBookTitle = function () {
+			bookTitle = authorLine[0].trim();
+			authorName = authorLine.slice(-1)[0].replace(')', '');
+		};
+		getAuthorAndBookTitle();
+		
+		dictionary[authorName] = {};
+
+		var writeBookSpot = function() {
+				dictionary[authorName][bookTitle] = {};
+				dictionary[authorName][bookTitle]['quote' + i] = quote;
+		};
+		var i = 0;
+		writeBookSpot();
+
+
+		
+
+		// Get the rest of the quotes
+		for (var i = 1; i < splitup.length - 1; i++) {
 			var current = splitup[i].split('\n');
 			
-			var authorLine = current[1].split('('); // First line of each block is Book Title (Author Name)
-			var bookTitle = authorLine[0].trim();
-			var authorName = authorLine.slice(-1)[0].replace(')', '');
-			var quote = current[4].toString();
-			var writeBookSpot = function() {
-					dictionary[authorName][bookTitle] = {};
-					dictionary[authorName][bookTitle]['quote' + i] = quote;
-			};
-
+			authorLine = current[1].split('('); // First line of each block is Book Title (Author Name)
+			getAuthorAndBookTitle();
+			quote = current[4].toString();
 
 			try {
 				dictionary[authorName][bookTitle]['quote' + i] = quote;

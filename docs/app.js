@@ -26,6 +26,7 @@ var main = function () {
 
 	var dataCreator = function(text) {
 		text = file + ''; // Get rid of annoying console error saying split isn't a function
+<<<<<<< HEAD
 
 		// Define placeholder variables
 		var authorName = '';
@@ -63,6 +64,21 @@ var main = function () {
 			authorLine = current[1].split('('); // First line of each block is Book Title (Author Name)
 			getAuthorAndBookTitle();
 			quote = current[4].toString();
+=======
+		var splitup = text.split('==========');
+		for (var i = 1; i < splitup.length - 1; i++) { // First value doesn't conform due to lack of leading equal signs
+			var current = splitup[i].split('\n');
+			
+			var authorLine = current[1].split('('); // First line of each block is Book Title (Author Name)
+			var bookTitle = authorLine[0].trim();
+			var authorName = authorLine.slice(-1)[0].replace(')', '');
+			var quote = current[4].toString();
+			var writeBookSpot = function() {
+					dictionary[authorName][bookTitle] = {};
+					dictionary[authorName][bookTitle]['quote' + i] = quote;
+			};
+
+>>>>>>> 67f867e6ca4ce92017ce1d40693218dbd6313fd9
 
 			try {
 				dictionary[authorName][bookTitle]['quote' + i] = quote;
@@ -101,6 +117,10 @@ var main = function () {
 		console.log(dictionary);
 		var dictString = JSON.stringify(dictionary, null, 3);
 		console.log(dictString);
+<<<<<<< HEAD
+=======
+// TESTING HOW TO PRETTY FORMAT
+>>>>>>> 67f867e6ca4ce92017ce1d40693218dbd6313fd9
 
 		var $content = $('#author-content p');
 
