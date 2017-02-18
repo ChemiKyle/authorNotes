@@ -1,7 +1,6 @@
 # authorNotes
 
-I sometimes read books to help create an illusion of intelligence. I'm also really forgetful, so I don't remember details from books I've read. Obviously this is detrimental to the upkeep of my facade, leaving me to compensate by using florid language and portraying a perniciously pretentious personality (haha, I made a meta joke, plz like me).  
-Like any confused 8th grader researching a book report, I highlight parts I particularly enjoy as I go along; occasionally I'll go back and read one of my highlights and remember large portions of the book. Thankfully Amazon stores these as a .txt file on the device, so I'm able to take them off and separate them into authors for easy rememberance.
+If you're anything like me you make highlights in your Kindle while reading as often as a confused 8th grader researching for a book report. Amazon stores these in a big .txt file on the device ordered by date, which isn't so great for finding out what specific lines Jane Austen said that made Mark Twain hate her so much.
 
-[I made a web app](https://chemikyle.github.io/authorNotes/) to sort through your Kindle clippings and present them in a more manageable manner. Simply upload your "My Clippings.txt" file from your Kindle to the site and your highlights will be presented on the right page.  
+[I made a web app](https://chemikyle.github.io/authorNotes/) to sort through your Kindle clippings and present them in a more manageable manner so you can more easily navigate them, and readily echo those funny things Dave Eggers said and try to pass yourself off as witty at dinner parties. Simply upload your "My Clippings.txt" file from your Kindle to the site and your highlights will be presented on the right page.  
 Currently shown as a large scrollable file formatted by author and by book, but as I learn more I'll eventually add drop down menus for each author.
