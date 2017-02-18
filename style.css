@@ -1,0 +1,117 @@
+:root {
+	--inner-page-color: #E2C18B;
+	--edge-page-color: #7a552a;
+	--cover-color: #4F7178;
+	/* Color pallette partially derived from http://www.colourlovers.com/palette/1729615/Old_book */
+}
+
+@font-face {
+	font-family: 'Literata';
+	src: url('Literata_TTF/literata-regular-webfont.woff') format('woff'),
+		 url('Literata_TTF/literata-regular.tff') format('truetype');
+}
+
+body{
+	background: var(--inner-page-color); /* For browsers that don't support gradients */
+	/* The rest make it look like an old book */
+	background: /* Chrome 25, Safari 6, iOS 6.1, Android 4.3 */
+	-webkit-linear-gradient(
+		right,
+		var(--cover-color),
+		var(--edge-page-color) 0.5%,
+		var(--inner-page-color) 2%,
+		var(--inner-page-color) 49.25%,
+		var(--edge-page-color) 50%,
+		var(--inner-page-color) 51%,
+		var(--inner-page-color) 98%,
+		var(--edge-page-color) 99.5%,
+		var(--cover-color));
+	background: /* Firefox (3.6 to 15) */
+	-moz-linear-gradient(
+		right,
+		var(--cover-color),
+		var(--edge-page-color) 0.5%,
+		var(--inner-page-color) 2%,
+		var(--inner-page-color) 49.25%,
+		var(--edge-page-color) 50%,
+		var(--inner-page-color) 51%,
+		var(--inner-page-color) 98%,
+		var(--edge-page-color) 99.5%,
+		var(--cover-color));
+	background: /* Old Opera (11.1 to 12.0) */ 
+	-o-linear-gradient(
+		right,
+		var(--cover-color),
+		var(--edge-page-color) 0.5%,
+		var(--inner-page-color) 2%,
+		var(--inner-page-color) 49.25%,
+		var(--edge-page-color) 50%,
+		var(--inner-page-color) 51%,
+		var(--inner-page-color) 98%,
+		var(--edge-page-color) 99.5%,
+		var(--cover-color));
+	background: /* Default */
+	linear-gradient(
+		to right,
+		var(--cover-color) 1em,
+		var(--edge-page-color) 0.5%,
+		var(--inner-page-color) 2%,
+		var(--inner-page-color) 49.25%,
+		var(--edge-page-color) 50%,
+		var(--inner-page-color) 51%,
+		var(--inner-page-color) 98%,
+		var(--edge-page-color) 99.6%,
+		var(--cover-color));
+	font-family: 'Literata';
+	margin: 0;
+}
+
+#top-of-book {
+	display: block;
+	background-color: var(--cover-color);
+	margin: 0;
+	padding: 3px;
+	bottom: 0;
+	left: 0;
+	width: auto;
+}
+#bottom-of-book {
+	display: block;
+	background-color: var(--cover-color);
+	margin: 0;
+	padding: 3px;
+    position: fixed;
+    z-index: 100; 
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+}
+
+.left-page {
+	padding: 0 0 0 4%;
+	float: left;
+	width: 46%;
+	overflow: auto;
+}
+
+.right-page {
+	padding: 0 2% 0 0;
+	float: right;
+	width: 46%;
+	overflow: auto;
+}
+
+div#author-content {
+	padding: 3% 0 0 0;
+	height: 75vh;
+	overflow: auto;
+}
+
+pre#author-content{
+	white-space: pre-wrap;
+	font-family: inherit;
+}
+
+input span:hover {
+	cursor: pointer;
+}
