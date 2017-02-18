@@ -82,7 +82,7 @@ var main = function () {
 		var $content = $('#author-content p');
 
 		$content.fadeOut('fast', function () {
-		$content.empty().append('<pre id="author-content">'+dictString.replace('\\r', '').replace('{', '').replace('}', '')+'</pre>').delay(500).fadeIn(500);
+		$content.empty().append('<pre id="author-content">'+dictString+'</pre>').delay(500).fadeIn(500);
 		});
 	});
 
