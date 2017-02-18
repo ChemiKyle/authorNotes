@@ -1,14 +1,8 @@
 # authorNotes
-I sometimes read books to help create an illusion of intelligence. I'm also really forgetful, so I don't remember details from books I've read. Obviously this is detrimental to the upkeep of my facade, leaving me to compensate by using florid language and portraying a perniciously pretentious personality (haha, look, it's a meta joke! plz like me).  
-Like any confused 8th grader researching a book report, I highlight parts I particularly enjoy as I go along; occasionally I'll go back and read one of my highlights and remember large portions of the book. Thankfully Amazon stores these as a .txt file on the device, so I'm able to take them off and separate them into authors for easy rememberance.
 
-The bash script copies notes from your kindle on to your computer.  
-The python script takes highlights/notes from your kindle clippings and separates them into text files for each author.
+If you're anything like me you make highlights in your Kindle while reading as often as a confused 8th grader researching for a book report. Amazon stores these in a big .txt file on the device ordered by the date the quote was highlighted; this isn't the best for recalling why exactly Kurt Vonnegut hated semicolons, but it's a great format for a computer to understand. Which means it _can_ be a great format for you to understand, reminisce properly, and ultimately make more literary references to seem smarter.
 
-This should work for anything that runs bash by default, I've only tested on Debian-based Linux though.
+[I made a web app](https://chemikyle.github.io/authorNotes/) to sort through your Kindle clippings and present them in a more manageable manner so you can more easily navigate them, and readily echo those funny things Dave Eggers said while trying to pass yourself off as witty at dinner parties.  
+Simply upload your "My Clippings.txt" file from your Kindle to the site and your highlights will be presented by author and book on the right page.
 
-TODO: Format the quotes into a SQL database by author and book, so I can display them on my dashboard and not relieve my amnesia of the same book two days in a row.
-
-Sample output for Kurt Vonnegut: kurtVonnegutNotes.txt
-
-I'm currently making this into a webapp, the scripts will function as normal if you stumble on this and want to use it in your own computer.
+I used to do this with a handful of python and shell programs, I've left them in /processing_scripts for anyone who wants to tweak it, or just run it on their own machine.
