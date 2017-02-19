@@ -2,15 +2,8 @@ var main = function () {
 	"use strict";
 
 	var dictionary = {};
-	var file = '';
-
-	var clearLeftPage = function() {
-		$("div.left-page").empty();
-	};
-
-	$("input#file-submit").on("click", function() {
-		clearLeftPage();
-	});
+	var file;
+	var $clientAuthorlist = $('select#list-of-authors');
 
 	var getText = function() {
 		document.getElementById("fileInput").addEventListener("change", function() {
@@ -52,9 +45,6 @@ var main = function () {
 		};
 		var i = 0;
 		writeBookSpot();
-
-
-		
 
 		// Get the rest of the quotes
 		for (var i = 1; i < splitup.length - 1; i++) {
@@ -102,6 +92,13 @@ var main = function () {
 		var dictString = JSON.stringify(dictionary, null, 3);
 
 		var $content = $('#author-content p');
+		var authorCount = (Object.keys(dictionary).length);
+
+		for (var i = 0; i < authorCount; i++) { // Update dropdown list with each author
+			var thisName = Object.keys(dictionary)[i];
+			$clientAuthorlist.append('<option value="'+thisName+'">'+thisName+'</option>');
+			console.log('loop works');
+		};
 
 		$content.fadeOut('fast', function () {
 		$content.empty().append('<pre id="author-content">'+dictString+'</pre>').delay(500).fadeIn(500);
