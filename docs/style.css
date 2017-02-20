@@ -96,7 +96,7 @@ body{
 
 div#author-content {
 	padding: 3% 0 0 0;
-	height: 75vh;
+	height: 95vh;
 	overflow: auto;
 }
 
@@ -105,10 +105,21 @@ pre#author-content{
 	font-family: inherit;
 }
 
-div#dropdowns {
-
-}
-
 input span:hover {
 	cursor: pointer;
+}
+
+div#default-quotes {
+	white-space: pre-wrap;
+	padding: 3% 0 0 0;
+	height: 50vh;
+	overflow: auto;
+}
+
+p.quote {
+	padding-left: 1em;
+}
+
+p.books-by {
+	text-decoration: underline;
 }

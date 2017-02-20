@@ -9,17 +9,534 @@
 <body>
 	<div id='top-of-book'></div>
 	<div class='left-page'>
-	<p>Do you ever highlight memorable passages on your kindle, but find it cumbersome to go back over them?</p>
-	<p>We can fix that for you and split your file up by author and book for easier perusal.</p>
-	<p>Just upload your file below and we'll work our magic.</p>
-	<input type="file" id="fileInput" />
-	<button id="process">Process file </button>
-	
-	<div class="dropdowns">
-	<select id="list-of-authors"></select>
+
+	<div class="intro-text">
+		<p>Do you ever highlight memorable passages on your kindle, but find it cumbersome to go back over them? <br>
+		We can fix that for you and split your file up by author and book for easier perusal.</p>
+		<p>Just upload your file below, click 'Process file,' and let your browser do the work. Supports multiple clipping uploads, new results will be added on, refresh page to clear.</p>
+
+		<p>Don't have a file at the ready? Click process to see it in action with an example of a raw file made from random bits of my own clippings.</p>
 	</div>
-	
-	</form>
+	<input type="file" id="fileInput" />
+	<button id="process">Process file</button>
+	<br>
+	<br>
+	Only view quotes from:
+	<select id="list-of-authors">
+		<option value="" disabled selected>Select an author</option>
+	</select>
+	<br>
+	<select id="list-of-books">
+		<option value="" disabled selected>Select a book</option>
+	</select>
+
+
+	<div id='default-quotes'>A Heartbreaking Work of Staggering Genius (Dave Eggers)
+- Your Highlight on page 251 | Location 3838-3839 | Added on Thursday, November 26, 2015 3:59:11 PM
+
+Dignity is an affectation, cute but eccentric, like learning French or collecting scarves. And it’s fleeting and incredibly mercurial. And subjective. So fuck it.
+==========
+The Restaurant at the End of the Universe (Douglas Adams)
+- Your Highlight on page 221 | Location 3384-3385 | Added on Saturday, January 2, 2016 12:05:30 PM
+
+The only moral it is possible to draw from this story is that one should never throw the letter Q into a pivet bush, but unfortunately there are times when it is unavoidable.
+==========
+Life, the Universe and Everything (Douglas Adams)
+- Your Bookmark on page 39 | Location 595 | Added on Saturday, January 2, 2016 9:26:31 PM
+
+
+==========
+Life, the Universe and Everything (Douglas Adams)
+- Your Highlight on page 50 | Location 759-760 | Added on Tuesday, January 5, 2016 12:39:51 PM
+
+Several billion trillion tons of superhot exploding hydrogen nuclei rose slowly above the horizon and managed to look small, cold and slightly damp.
+==========
+Axiomatic (Greg Egan)
+- Your Highlight on page 100 | Location 1521-1521 | Added on Friday, March 4, 2016 10:45:29 AM
+
+in spite of impending middle age, I wasn’t yet terminally law-abiding, conservative and dull. 
+==========
+Axiomatic (Greg Egan)
+- Your Highlight on page 258 | Location 3948-3949 | Added on Saturday, April 30, 2016 7:52:59 AM
+
+risk must collapse into certainty, one way or another. 
+==========
+Neuromancer (William Gibson)
+- Your Note on Location 2632 | Added on Thursday, July 14, 2016 11:48:58 PM
+
+Egan's Quarantine?
+==========
+Neuromancer (William Gibson)
+- Your Highlight on Location 2632-2632 | Added on Thursday, July 14, 2016 11:48:58 PM
+
+“The Villa Straylight knows no sky, recorded or otherwise.
+==========
+On the Road (Jack Kerouac)
+- Your Highlight on page 11 | Location 162-162 | Added on Sunday, July 24, 2016 8:41:55 PM
+
+I shambled after as I’ve been doing all my life after people who interest me,
+==========
+On the Road (Jack Kerouac)
+- Your Highlight on page 18 | Location 276-277 | Added on Sunday, July 24, 2016 9:07:39 PM
+
+one of the biggest troubles hitchhiking is having to talk to innumerable people, make them feel that they didn’t make a mistake picking you up,
+==========
+On the Road (Jack Kerouac)
+- Your Highlight on page 51 | Location 777-778 | Added on Sunday, July 24, 2016 10:53:27 PM
+
+Nobody can get to that last thing. We keep on living in hopes of catching it once for all.”
+==========
+On the Road (Jack Kerouac)
+- Your Highlight on page 54 | Location 828-828 | Added on Sunday, July 24, 2016 11:07:31 PM
+
+I was so interested in the opera that for a while I forgot the circumstances of my crazy life
+==========
+On the Road (Jack Kerouac)
+- Your Highlight on page 59 | Location 900-901 | Added on Sunday, July 24, 2016 11:18:58 PM
+
+We lay on our backs, looking at the ceiling and wondering what God had wrought when He made life so sad.
+==========
+Luminous (Greg Egan)
+- Your Note on page 34 | Location 521 | Added on Thursday, July 28, 2016 10:27:52 AM
+
+Einstein Podolsky Rosen
+==========
+Luminous (Greg Egan)
+- Your Highlight on page 34 | Location 520-521 | Added on Thursday, July 28, 2016 10:27:52 AM
+
+Certain measurements carried out on the separated atoms showed statistical correlations which only made sense if a single wave function encompassing the two responded to the measurement process instantaneously
+==========
+Luminous (Greg Egan)
+- Your Highlight on page 69 | Location 1056-1056 | Added on Friday, July 29, 2016 5:37:52 AM
+
+Every truth in mathematics was encoded, reflected, in countless other forms.
+==========
+Luminous (Greg Egan)
+- Your Note on page 76 | Location 1155 | Added on Friday, July 29, 2016 7:57:46 AM
+
+Light mediated  contol of matter?
+==========
+Luminous (Greg Egan)
+- Your Highlight on page 76 | Location 1154-1155 | Added on Friday, July 29, 2016 7:57:46 AM
+
+a sufficiently ordered (and sufficiently intense) configuration of light could diffract a beam of matter.
+==========
+Luminous (Greg Egan)
+- Your Note on page 97 | Location 1478 | Added on Friday, July 29, 2016 11:14:41 AM
+
+Sartre and Camus power obsessed?
+==========
+Luminous (Greg Egan)
+- Your Highlight on page 97 | Location 1477-1478 | Added on Friday, July 29, 2016 11:14:41 AM
+
+Nietzsche understood. Sartre and Camus understood.
+==========
+Luminous (Greg Egan)
+- Your Note on page 128 | Location 1954 | Added on Saturday, July 30, 2016 7:03:16 AM
+
+Transgender dysphoria likely not this simple
+==========
+Luminous (Greg Egan)
+- Your Highlight on page 128 | Location 1953-1954 | Added on Saturday, July 30, 2016 7:03:16 AM
+
+sex hormones in the fetal bloodstream which let the grow-ing neurons know the gender of the embryo, and which wiring pattern to adopt.
+==========
+Luminous (Greg Egan)
+- Your Highlight on page 158 | Location 2419-2420 | Added on Saturday, July 30, 2016 11:32:44 AM
+
+The human brain is far too good at finding patterns; without rigorous statistical tools we're helpless, animists grasping at meaning in every random puff of air.
+==========
+Luminous (Greg Egan)
+- Your Note on page 188 | Location 2872 | Added on Tuesday, August 2, 2016 7:59:06 AM
+
+All villages named after Roman historians/scholars.
+==========
+Luminous (Greg Egan)
+- Your Highlight on page 188 | Location 2872-2872 | Added on Tuesday, August 2, 2016 7:59:06 AM
+
+Pliny,
+==========
+Foundation (Isaac Asimov)
+- Your Highlight on page 7 | Location 104-105 | Added on Monday, August 15, 2016 6:20:14 AM
+
+childishness comes almost as naturally to a man as to a child,
+==========
+Foundation (Isaac Asimov)
+- Your Highlight on page 26 | Location 397-398 | Added on Monday, August 15, 2016 7:33:57 AM
+
+Scientific truth is beyond loyalty and disloyalty.
+==========
+Foundation (Isaac Asimov)
+- Your Highlight on page 39 | Location 589-590 | Added on Monday, August 15, 2016 10:42:46 AM
+
+I have accomplished in life what I have intended and under what circumstances may one better die.”
+==========
+Permutation City (Greg Egan)
+- Your Highlight on page 81 | Location 1228-1229 | Added on Sunday, September 25, 2016 1:53:17 PM
+
+Why shouldn’t a Copy’s experience of time be as sacrosanct as that of any astronaut?
+==========
+Permutation City (Greg Egan)
+- Your Note on page 103 | Location 1578 | Added on Monday, September 26, 2016 4:33:22 PM
+
+Luminous?
+==========
+Permutation City (Greg Egan)
+- Your Highlight on page 103 | Location 1578-1578 | Added on Monday, September 26, 2016 4:33:23 PM
+
+And wouldn’t those patterns, however scrambled they might be in real time, be conscious of themselves,
+==========
+God Bless You, Mr. Rosewater: A Novel (Kurt Vonnegut)
+- Your Highlight on page 10 | Location 150-151 | Added on Tuesday, September 27, 2016 4:27:57 PM
+
+"The hell with the talented sparrowfarts who write delicately of one small piece of one mere lifetime, when the issues are galaxies, eons, and trillions of souls yet to be born."
+==========
+God Bless You, Mr. Rosewater: A Novel (Kurt Vonnegut)
+- Your Note on page 12 | Location 170 | Added on Tuesday, September 27, 2016 4:38:12 PM
+
+Player Piano
+==========
+God Bless You, Mr. Rosewater: A Novel (Kurt Vonnegut)
+- Your Highlight on page 12 | Location 169-170 | Added on Tuesday, September 27, 2016 4:38:12 PM
+
+So Mushari felt swindled as he wallowed through the garish prose, lusted for sex, learned instead about automation.
+==========
+God Bless You, Mr. Rosewater: A Novel (Kurt Vonnegut)
+- Your Highlight on page 24 | Location 367-368 | Added on Wednesday, September 28, 2016 11:27:51 AM
+
+"I'm going to love these discarded Americans, even though they're useless and unattractive. That is going to be my work of art."
+==========
+God Bless You, Mr. Rosewater: A Novel (Kurt Vonnegut)
+- Your Highlight on page 73 | Location 1114-1116 | Added on Wednesday, September 28, 2016 6:23:12 PM
+
+'Hello, babies. Welcome to Earth. It's hot in the summer and cold in the winter. It's round and wet and crowded. At the outside, babies, you've got about a hundred years here. There's only one rule that I know of, babies --: "'God damn it, you've got to be kind.'"
+==========
+God Bless You, Mr. Rosewater: A Novel (Kurt Vonnegut)
+- Your Highlight on page 87 | Location 1321-1322 | Added on Thursday, September 29, 2016 12:24:53 PM
+
+That she was exactly as poor and dull as Fred was a possibility she was constitutionally unable to entertain.
+==========
+Permutation City (Greg Egan)
+- Your Highlight on page 110 | Location 1681-1682 | Added on Saturday, October 1, 2016 12:07:31 PM
+
+However much intellectual pleasure it had given her, the real obsession, the real addiction, was a matter of putting on the gloves and reaching into that artificial space.
+==========
+Permutation City (Greg Egan)
+- Your Highlight on page 171 | Location 2615-2615 | Added on Monday, October 3, 2016 12:35:11 PM
+
+an engine in his skull a billion years old which only wanted to survive.
+==========
+03 Life, the Universe and Everything (Douglas Adams)
+- Your Highlight on page 210 | Location 3220-3221 | Added on Thursday, October 6, 2016 10:44:21 AM
+
+He learnt to communicate with birds and discovered that their conversation was fantastically boring.
+==========
+Foundation (Isaac Asimov)
+- Your Highlight on page 117 | Location 1793-1794 | Added on Saturday, October 8, 2016 11:25:02 AM
+
+“The Galactic Spirit, to use the popular cant, helps those who help themselves. I quite understand that, left to itself, the Foundation would never cooperate.”
+==========
+Foundation (Isaac Asimov)
+- Your Highlight on page 166 | Location 2539-2540 | Added on Sunday, October 9, 2016 11:31:15 AM
+
+‘To succeed, planning alone is insufficient. One must improvise as well.’
+==========
+Foundation (Isaac Asimov)
+- Your Highlight on page 227 | Location 3476-3477 | Added on Sunday, October 9, 2016 6:17:22 PM
+
+Arbitrary rulers throughout history have bartered their subjects’ welfare for what they consider honor, and glory, and conquest. But it’s still the little things in life that count
+==========
+Slaughterhouse Five (Kurt Vonnegut)
+- Your Highlight on page 28 | Location 416-416 | Added on Wednesday, October 12, 2016 12:06:15 AM
+
+He never got mad at anything. He was wonderful that way.
+==========
+Foundation and Empire (Isaac Asimov)
+- Your Highlight on page 54 | Location 828-829 | Added on Friday, October 14, 2016 10:37:55 AM
+
+he lacks even the fundamental honesty of honorable corruption. He doesn’t stay bribed; not for any sum.
+==========
+Ubik (Philip K. Dick)
+- Your Highlight on page 42 | Location 640-641 | Added on Saturday, October 15, 2016 2:43:48 PM
+
+He gazed at the girl Pat, with her black, strong hair and her sensual mouth; in him he felt unhappy cravings arise, cloudy and pointless wants that led nowhere, that returned to him empty, as in the completion of a geometrically perfect circle.
+==========
+Ubik (Philip K. Dick)
+- Your Highlight on page 54 | Location 826-827 | Added on Saturday, October 15, 2016 4:21:16 PM
+
+Near her he became aware of the physical mechanisms which kept him alive; within him machinery, pipes and valves and gas-compressors and fan belts had to chug away at a losing task, a labor ultimately doomed.
+==========
+Ubik (Philip K. Dick)
+- Your Highlight on page 55 | Location 829-830 | Added on Saturday, October 15, 2016 4:23:36 PM
+
+Her eyes, those green and tumbled stones, looked impassively at everything; he had never seen fear in them, or aversion, or contempt. What she saw she accepted.
+==========
+Ubik (Philip K. Dick)
+- Your Highlight on page 76 | Location 1162-1166 | Added on Sunday, October 16, 2016 12:21:58 PM
+
+"One of these days," Joe said wrathfully, "people like me will rise up and overthrow you, and the end of tyranny by the homeostatic machine will have arrived. The day of human values and compassion and simple warmth will return, and when that happens someone like myself who has gone through an ordeal and who genuinely needs hot coffee to pick him up and keep him functioning when he has to function will get the hot coffee whether he happens to have a poscred readily available or not." He lifted the miniature pitcher of cream, then set it down. "And furthermore, your cream or milk or whatever it is, is sour."
+==========
+Ubik (Philip K. Dick)
+- Your Highlight on page 125 | Location 1902-1903 | Added on Sunday, October 16, 2016 6:39:34 PM
+
+The man contains - not the boy - but earlier men, he thought. History began a long time ago.
+==========
+Ubik (Philip K. Dick)
+- Your Highlight on page 168 | Location 2563-2566 | Added on Monday, October 17, 2016 3:19:47 PM
+
+Metabolism, he reflected, is a burning process, an active furnace. When it ceases to function, life is over. They must be wrong about hell, he said to himself. Hell is cold; everything there is cold. The body means weight and heat; now weight is a force which I am succumbing to, and heat, my heat, is slipping away. And, unless I become reborn, it will never return. This is the destiny of the universe, So at least I won't be alone.
+==========
+Ubik (Philip K. Dick)
+- Your Highlight on page 201 | Location 3082-3084 | Added on Tuesday, October 18, 2016 11:39:14 AM
+
+We are served by organic ghosts, he thought, who, speaking and writing, pass through this our new environment. Watching, wise, physical ghosts from the full-life world, elements of which have become for us invading but agreeable splinters of a substance that pulsates like a former heart.
+==========
+Foundation and Empire (Isaac Asimov)
+- Your Highlight on page 83 | Location 1265-1267 | Added on Wednesday, October 19, 2016 8:46:23 AM
+
+We can see, now, that the social background of the Empire makes wars of conquest impossible for it. Under weak Emperors, it is torn apart by generals competing for a worthless and surely death-bringing throne. Under strong Emperors, the Empire is frozen into a paralytic rigor in which disintegration apparently ceases for the moment, but only at the sacrifice of all possible growth.”
+==========
+Slaughterhouse Five (Kurt Vonnegut)
+- Your Highlight on page 98 | Location 1498-1499 | Added on Wednesday, October 19, 2016 3:59:06 PM
+
+“That’s one thing Earthlings might learn to do, if they tried hard enough: Ignore the awful times, and concentrate on the good ones.”
+==========
+The Man in the High Castle (Philip K. Dick)
+- Your Highlight on page 16 | Location 232-234 | Added on Friday, October 21, 2016 12:33:14 PM
+
+But even then, toward the end, when they had been fighting so much, he still never saw her as anything but a direct, literal invention of God’s, dropped into his life for reasons he would never know. And on that account—a sort of religious intuition or faith about her—he could not get over having lost her.
+==========
+Do Androids Dream Of Electric Sheep? (Philip K. Dick)
+- Your Highlight on page 8 | Location 114-114 | Added on Friday, October 21, 2016 5:00:27 PM
+
+Despair like that, about total reality, is self-perpetuating."
+==========
+Do Androids Dream Of Electric Sheep? (Philip K. Dick)
+- Your Highlight on page 68 | Location 1036-1037 | Added on Monday, October 24, 2016 11:40:19 AM
+
+A coldness. Like, he thought, a breath from the vacuum between inhabited worlds, in fact from nowhere: it was not what she did or said but what she did not do and say.
+==========
+Do Androids Dream Of Electric Sheep? (Philip K. Dick)
+- Your Highlight on page 134 | Location 2047-2049 | Added on Tuesday, October 25, 2016 12:09:20 PM
+
+Luba Luft glanced at him idly, then violently as she recognized him; her eyes faded and the color dimmed from her face, leaving it cadaverous, as if already starting to decay. As if life had in an instant retreated to some point far inside her, leaving the body to its automatic ruin.
+==========
+The Trial (Franz Kafka)
+- Your Highlight on page 61 | Location 924-926 | Added on Wednesday, October 26, 2016 7:31:06 PM
+
+And the purpose of this extensive organization, gentlemen? It consists of arresting innocent people and introducing senseless proceedings against them, which for the most part, as in my case, go nowhere. Given the senselessness of the whole affair, how could the bureaucracy avoid becoming entirely corrupt?
+==========
+The Trial (Franz Kafka)
+- Your Highlight on page 64 | Location 974-974 | Added on Wednesday, October 26, 2016 7:36:32 PM
+
+it’s in the nature of this judicial system that one is condemned not only in innocence but also in ignorance.”
+==========
+The Trial (Franz Kafka)
+- Your Highlight on page 88 | Location 1336-1337 | Added on Thursday, October 27, 2016 10:56:30 AM
+
+it’s the organization that’s guilty, it’s the high officials who are guilty.”
+==========
+The Trial (Franz Kafka)
+- Your Highlight on page 112 | Location 1716-1719 | Added on Thursday, October 27, 2016 8:47:57 PM
+
+the defense is naturally placed in a very unfavorable and difficult position. But that too is intentional. For the defense is not actually countenanced by the Law, but only tolerated, and there is even some controversy as to whether the relevant passages of the Law can truly be construed to include even such tolerance. In the strict sense, therefore, there are no court-recognized lawyers; all those who appear before the court as lawyers are basically shysters.
+==========
+The Myth of Sisyphus and Other Essays (Albert Camus)
+- Your Highlight on page 6 | Location 83-85 | Added on Saturday, October 29, 2016 7:49:07 PM
+
+I see others paradoxically getting killed for the ideas or illusions that give them a reason for living (what is called a reason for living is also an excellent reason for dying).
+==========
+The Myth of Sisyphus and Other Essays (Albert Camus)
+- Your Highlight on page 7 | Location 101-102 | Added on Saturday, October 29, 2016 7:53:01 PM
+
+In a sense, and as in melodrama, killing yourself amounts to confessing. It is confessing that life is too much for you or that you do not understand it.
+==========
+The Myth of Sisyphus and Other Essays (Albert Camus)
+- Your Highlight on page 7 | Location 103-106 | Added on Saturday, October 29, 2016 7:54:14 PM
+
+Living, naturally, is never easy. You continue making the gestures commanded by existence for many reasons, the first of which is habit. Dying voluntarily implies that you have recognized, even instinctively, the ridiculous character of that habit, the absence of any profound reason for living, the insane character of that daily agitation, and the uselessness of suffering.
+==========
+The Trial (Franz Kafka)
+- Your Highlight on page 195 | Location 2985-2986 | Added on Wednesday, November 2, 2016 11:58:53 AM
+
+How can any person in general be guilty? We’re all human after all, each and every one of us.”
+==========
+The Trial (Franz Kafka)
+- Your Highlight on page 209 | Location 3195-3196 | Added on Wednesday, November 2, 2016 12:50:30 PM
+
+Moonlight lay everywhere with the naturalness and serenity no other light is granted.
+==========
+The Myth of Sisyphus and Other Essays (Albert Camus)
+- Your Highlight on page 19 | Location 292-294 | Added on Wednesday, November 2, 2016 2:26:38 PM
+
+From the moment absurdity is recognized, it becomes a passion, the most harrowing of all. But whether or not one can live with one’s passions, whether or not one can accept their law, which is to burn the heart they simultaneously exalt—that is the whole question.
+==========
+The Myth of Sisyphus and Other Essays (Albert Camus)
+- Your Highlight on page 23 | Location 352-353 | Added on Wednesday, November 2, 2016 4:25:52 PM
+
+I want everything to be explained to me or nothing. And the reason is impotent when it hears this cry from the heart. The mind aroused by this insistence seeks and finds nothing but contradictions and nonsense.
+==========
+The Myth of Sisyphus and Other Essays (Albert Camus)
+- Your Highlight on page 93 | Location 1415-1416 | Added on Wednesday, November 2, 2016 6:12:53 PM
+
+The lucidity that was to constitute his torture at the same time crowns his victory. There is no fate that cannot be surmounted by scorn.
+==========
+The Myth of Sisyphus and Other Essays (Albert Camus)
+- Your Highlight on page 93 | Location 1418-1420 | Added on Wednesday, November 2, 2016 6:13:39 PM
+
+When the images of earth cling too tightly to memory, when the call of happiness becomes too insistent, it happens that melancholy rises in man’s heart: this is the rock’s victory, this is the rock itself. The boundless grief is too heavy to bear. These are our nights of Gethsemane. But crushing truths perish from being acknowledged.
+==========
+The Myth of Sisyphus and Other Essays (Albert Camus)
+- Your Highlight on page 94 | Location 1427-1429 | Added on Wednesday, November 2, 2016 6:18:02 PM
+
+“I conclude that all is well,” says Œdipus, and that remark is sacred. It echoes in the wild and limited universe of man. It teaches that all is not, has not been, exhausted. It drives out of this world a god who had come into it with dissatisfaction and a preference for futile sufferings. It makes of fate a human matter, which must be settled among men.
+==========
+The Myth of Sisyphus and Other Essays (Albert Camus)
+- Your Highlight on page 94 | Location 1432-1433 | Added on Wednesday, November 2, 2016 6:18:29 PM
+
+There is no sun without shadow, and it is essential to know the night.
+==========
+The Myth of Sisyphus and Other Essays (Albert Camus)
+- Your Highlight on page 94 | Location 1439-1441 | Added on Wednesday, November 2, 2016 6:19:50 PM
+
+Each atom of that stone, each mineral flake of that night-filled mountain, in itself forms a world. The struggle itself toward the heights is enough to fill a man’s heart. One must imagine Sisyphus happy.
+==========
+Foundation and Empire (Isaac Asimov)
+- Your Highlight on page 108 | Location 1653-1654 | Added on Friday, November 4, 2016 11:08:34 AM
+
+It is the invariable lesson to humanity that distance in time, and in space as well, lends focus. It is not recorded, incidentally, that the lesson has ever been permanently learned.
+==========
+The Castle (Franz Kafka)
+- Your Highlight on page 30 | Location 460-461 | Added on Sunday, November 6, 2016 8:23:37 PM
+
+I’m really not powerful at all. And so I probably have no less respect for those with power than you do, only I’m not as honest as you are and don’t always care to admit it.”
+==========
+A Man Without a Country (Kurt Vonnegut)
+- Your Highlight on page 41 | Location 625-626 | Added on Friday, November 11, 2016 12:31:54 PM
+
+How beautiful it is to get up and go out and do something. We are here on Earth to fart around. Don’t let anybody tell you any different.
+==========
+The Man in the High Castle (Philip K. Dick)
+- Your Highlight on page 40 | Location 610-610 | Added on Friday, November 18, 2016 8:29:47 AM
+
+Perhaps if you know you are insane then you are not insane. Or. you are becoming sane, finally. Waking up.
+==========
+The Man in the High Castle (Philip K. Dick)
+- Your Highlight on page 41 | Location 623-628 | Added on Friday, November 18, 2016 8:34:07 AM
+
+They see through the here, the now, into the vast black deep beyond, the unchanging. And that is fatal to life. Because eventually there will be no life; there was once only the dust particles in space, the hot hydrogen gases, nothing more, and it will come again. This is an interval, ein Augenblick. The cosmic process is hurrying on, crushing life back into the granite and methane; the wheel turns for all life. It is all temporary. And they—these madmen—respond to the granite, the dust, the longing of the inanimate; they want to aid Natur. And, he thought, I know why. They want to be the agents, not the victims, of history. They identify with God’s power and believe they are godlike. That is their basic madness.
+==========
+The Alchemist (Paulo Coelho)
+- Your Highlight on page 16 | Location 239-239 | Added on Sunday, November 20, 2016 11:16:04 AM
+
+It’s the possibility of having a dream come true that makes life interesting,
+==========
+The Man in the High Castle (Philip K. Dick)
+- Your Highlight on page 225 | Location 3438-3440 | Added on Tuesday, November 22, 2016 5:31:35 PM
+
+One seeks to contravene one’s perceptions-why? So that one can wander utterly lost, without signposts or guide? This hypnagogic condition. Attention-faculty diminished so that twilight state obtains; world seen merely in symbolic, archetypal aspect, totally confused with unconscious material.
+==========
+The Man in the High Castle (Philip K. Dick)
+- Your Highlight on page 225 | Location 3449-3449 | Added on Tuesday, November 22, 2016 5:33:44 PM
+
+One cannot compel understanding to come.
+==========
+The Man in the High Castle (Philip K. Dick)
+- Your Highlight on page 237 | Location 3626-3630 | Added on Tuesday, November 22, 2016 8:29:43 PM
+
+The terrible dilemma of our lives. Whatever happens, it is evil beyond compare. Why struggle, then? Why choose? If all alternatives are the same . Evidently we go on, as we always have. From day to day. At this moment we work against Operation Dandelion. Later on, at another moment, we work to defeat the police. But we cannot do it all at once; it is a sequence. An unfolding process. We can only control the end by making a choice at each step. He thought, We can only hope. And try.
+==========
+The Man in the High Castle (Philip K. Dick)
+- Your Highlight on page 250 | Location 3819-3819 | Added on Wednesday, November 23, 2016 10:44:34 AM
+
+“She’s terribly, terribly disruptive.” “So is reality,”
+==========
+Snow Crash (Neal Stephenson)
+- Your Highlight on page 37 | Location 558-558 | Added on Thursday, November 24, 2016 11:26:46 AM
+
+The world is full of power and energy and a person can go far by just skimming off a tiny bit of it.
+==========
+Blood Meridian (Cormac McCarthy)
+- Your Highlight on page 5 | Location 67-69 | Added on Sunday, December 4, 2016 11:31:04 PM
+
+He watches, pale and unwashed. He can neither read nor write and in him broods already a taste for mindless violence. All history present in that visage, the child the father of the man.
+==========
+Blood Meridian (Cormac McCarthy)
+- Your Highlight on page 46 | Location 696-700 | Added on Wednesday, December 7, 2016 2:26:34 PM
+
+They rode on and the sun in the east flushed pale streaks of light and then a deeper run of color like blood seeping up in sudden reaches flaring planewise and where the earth drained up into the sky at the edge of creation the top of the sun rose out of nothing like the head of a great red phallus until it cleared the unseen rim and sat squat and pulsing and malevolent behind them. The shadows of the smallest stones lay like pencil lines across the sand and the shapes of the men and their mounts advanced elongate before them like strands of the night from which they'd ridden, like tentacles to bind them to the darkness yet to come.
+==========
+Blood Meridian (Cormac McCarthy)
+- Your Highlight on page 48 | Location 736-737 | Added on Wednesday, December 7, 2016 3:48:29 PM
+
+the mountains on the sudden skyline stark and black and livid like a land of some other order out there whose true geology was not stone but fear.
+==========
+Blood Meridian (Cormac McCarthy)
+- Your Highlight on page 80 | Location 1215-1216 | Added on Thursday, December 8, 2016 12:50:34 PM
+
+Goldseekers. Itinerant degenerates bleeding westward like some heliotropic plague.
+==========
+Blood Meridian (Cormac McCarthy)
+- Your Highlight on page 88 | Location 1336-1338 | Added on Thursday, December 8, 2016 5:24:24 PM
+
+The jagged mountains were pure blue in the dawn and everywhere birds twittered and the sun when it rose caught the moon in the west so that they lay opposed to each other across the earth, the sun whitehot and the moon a pale replica, as if they were the ends of a common bore beyond whose terminals burned worlds past all reckoning.
+==========
+Flow My Tears, the Policeman Said (Philip K. Dick)
+- Your Highlight on page 103 | Location 1579-1583 | Added on Saturday, January 14, 2017 3:09:34 PM
+
+"Because the instinct for survival loses in the end. With every living creature, mole, bat, human, frog. Even frogs who smoke cigars and play chess. You can never accomplish what your survival instinct sets out to do, so ultimately your striving ends in failure and you succumb to death, and that ends it. But if you love you can fade out and watch with happiness, and with cool, mellow, alpha contentment, the highest form of contentment, the living on of one of those you love."
+==========
+Snow Crash (Neal Stephenson)
+- Your Highlight on page 207 | Location 3171-3172 | Added on Sunday, January 15, 2017 12:27:23 PM
+
+if you stare into a person's pupil, you can see the terminal of the brain.
+==========
+Snow Crash (Neal Stephenson)
+- Your Highlight on page 220 | Location 3359-3362 | Added on Sunday, January 15, 2017 12:55:05 PM
+
+A speech with magical force. Nowadays, people don't believe in these kinds of things. Except in the Metaverse, that is, where magic is possible. The Metaverse is a fictional structure made out of code. And code is just a form of speech—the form that computers understand. The Metaverse in its entirety could be considered a single vast nam-shub, enacting itself on L. Bob Rife's fiber-optic network.
+==========
+Snow Crash (Neal Stephenson)
+- Your Highlight on page 224 | Location 3424-3424 | Added on Sunday, January 15, 2017 7:52:31 PM
+
+Egypt left a legacy of art and architecture; Sumer's legacy is its megabytes.
+==========
+Flow My Tears, the Policeman Said (Philip K. Dick)
+- Your Highlight on page 166 | Location 2540-2545 | Added on Wednesday, January 18, 2017 9:17:41 PM
+
+"The exposure you'll get. The sales. Museums and stores will know your name, your stuff, buyers will be coming out of the woodwork."       Mary Anne said quietly, "Leave me alone, please. I'm very happy. I know I'm a good potter; I know that the stores, the good ones, like what I do. Does everything have to be on a great scale with a cast of thousands? Can't I lead my little life the way I want to?" She glared at him, her voice almost inaudible. "I don't see what all your exposure and fame have done for you-- back at the coffee shop you said to me, 'Is my record really on that jukebox?' You were afraid it wasn't; you were a lot more insecure than I'll ever be."
+==========
+Snow Crash (Neal Stephenson)
+- Your Highlight on page 286 | Location 4386-4395 | Added on Saturday, February 4, 2017 1:02:10 PM
+
+“Lagos modified the strict Chomskyan theory by supposing that learning a language is like blowing code into PROMs—an analogy that I cannot interpret.” “The analogy is clear. PROMs are Programmable Read-Only Memory chips,” Hiro says. “When they come from the factory, they have no content. Once and only once, you can place information into those chips and then freeze it—the information, the software, becomes frozen into the chip—it transmutes into hardware. After you have blown the code into the PROMs, you can read it out, but you can't write to them anymore. So Lagos was trying to say that the newborn human brain has no structure—as the relativists would have it—and that as the child learns a language, the developing brain structures itself accordingly, the language gets ‘blown into' the hardware and becomes a permanent part of the brain's deep structure—as the universalists would have it.” “Yes. This was his interpretation.” “Okay. So when he talked about Enki being a real person with magical powers, what he meant was that Enki somehow understood the connection between language and the brain, knew how to manipulate it. The same way that a hacker, knowing the secrets of a computer system, can write code to control it—digital nam-shubs.”
+==========
+Snow Crash (Neal Stephenson)
+- Your Highlight on page 288 | Location 4403-4418 | Added on Saturday, February 4, 2017 1:05:32 PM
+
+“Early linguists, as well as the Kabbalists, believed in a fictional language called the tongue of Eden, the language of Adam. It enabled all men to understand each other, to communicate without misunderstanding. It was the language of the Logos, the moment when God created the world by speaking a word. In the tongue of Eden, naming a thing was the same as creating it. To quote Steiner again, ‘Our speech interposes itself between apprehension and truth like a dusty pane or warped mirror. The tongue of Eden was like a flawless glass; a light of total understanding streamed through it. Thus Babel was a second Fall.' And Isaac the Blind, an early Kabbalist, said that, to quote Gershom Scholem's translation, ‘The speech of men is connected with divine speech and all language whether heavenly or human derives from one source: the Divine Name.' The practical kabbalists, the sorcerers, bore the title Ba'al Shem, meaning ‘master of the divine name.' ” “The machine language of the world,” Hiro says. “Is this another analogy?” “Computers speak machine language,” Hiro says. “It's written in ones and zeroes—binary code. At the lowest level, all computers are programmed with strings of ones and zeroes. When you program in machine language, you are controlling the computer at its brainstem, the root of its existence. It's the tongue of Eden. But it's very difficult to work in machine language because you go crazy after a while, working at such a minute level. So a whole Babel of computer languages has been created for programmers: FORTRAN, BASIC, COBOL, LISP, Pascal, C, PROLOG, FORTH. You talk to the computer in one of these languages, and a piece of software called a compiler converts it into machine language. But you never can tell exactly what the compiler is doing. It doesn't always come out the way you want. Like a dusty pane or warped mirror. A really advanced hacker comes to understand the true inner workings of the machine—he sees through the language he's working in and glimpses the secret functioning of the binary code—becomes a Ba'al Shem of sorts.”
+==========
+Folding Beijing (Hao Jingfang)
+- Your Highlight on page 13 | Location 195-196 | Added on Tuesday, February 7, 2017 12:50:38 PM
+
+This was their lot: to eke out a living by performing the repetitive drudgery as fast as possible, to toil hour after hour for rewards as thin as the wings of cicadas.
+==========
+The Fish of LiJiang (Chen Qiufan)
+- Your Highlight on page 44 | Location 668-675 | Added on Tuesday, February 14, 2017 12:22:47 AM
+
+In the waterways of Lijiang live schools of red fish. Whether it’s dawn, dusk, or midnight, you can see them hovering in the water, facing the same direction, lined up like soldiers on a parade ground, ready for inspection. But if you look closer, you’ll see that they aren’t really still. In fact, they’re struggling against the current in order to maintain their position. Once in a while, one or two fish become tired and are pushed out of the formation by the current. But soon, tails fluttering, they fight their way back into place. It’s been ten years since I last saw them. They, at least, haven’t changed. “Swim, swim, swim. Before you know it, life is over.” I repeat the same words I said ten years ago. “Just like us,” she says. “This is the hidden meaning of life,” I say. “At least we still can choose how to live.” I sound so pretentious I want to gag.
+==========
+Night Journey of the Dragon-Horse (Xia Jia)
+- Your Highlight on page 119 | Location 1815-1817 | Added on Sunday, February 19, 2017 4:06:54 PM
+
+The avenue he’s on was once this city’s most famous street. Now it is a deep canyon whose craggy walls are formed from an amalgam of bricks, steel, concrete, and trees, the product of mixing the inorganic with the organic, decay with life, reality with dream, the steel-and-glass metropolis with ancient myths.
+==========
+Night Journey of the Dragon-Horse (Xia Jia)
+- Your Highlight on page 119 | Location 1815-1819 | Added on Sunday, February 19, 2017 4:07:53 PM
+
+The avenue he’s on was once this city’s most famous street. Now it is a deep canyon whose craggy walls are formed from an amalgam of bricks, steel, concrete, and trees, the product of mixing the inorganic with the organic, decay with life, reality with dream, the steel-and-glass metropolis with ancient myths. He remembers there was once a square nearby where bright lights remained lit throughout the night like a thousand-year dream. But in the end, the lights went out, and the dream ended. There’s nothing in this world that can outlast time itself.
+==========
+	</div>
 	</div>
 
 	<div class="right-page">
