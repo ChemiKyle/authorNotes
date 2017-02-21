@@ -95,6 +95,9 @@ body{
 #chap-title {
 	text-align: center;
 }
+.intro-text {
+		margin-right: 10px;
+}
 
 .right-page {
 	padding: 0 2% 0 0;
@@ -120,8 +123,8 @@ input span:hover {
 
 div#default-quotes {
 	white-space: pre-wrap;
-	padding: 3%  0 0;
-	height: 50vh;
+	padding: 3% 0 0 0;
+	height: 25vh;
 	overflow: auto;
 	margin-right: 20px;
 }
