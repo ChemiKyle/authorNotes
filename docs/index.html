@@ -7,24 +7,35 @@
 </head>
 
 <body>
+
 	<div id='top-of-book'></div>
+
+	<div id="bookmark">
+		<div><input type="file" id="fileInput" /></div>
+		<div><button id="process">Process</button></div>
+	</div>
+
 	<div class='left-page'>
+
+	<div id="chap-title">
+		<h2>Author Notes</h2>
+		<h3>Introduction</h3>
+	</div>
 
 	<div class="intro-text">
 		<p>Do you ever highlight memorable passages on your kindle, but find it cumbersome to go back over them? <br>
 		We can fix that for you and split your file up by author and book for easier perusal.</p>
-		<p>Just upload your file below, click 'Process file,' and let your browser do the work. Supports multiple clipping uploads, new results will be added on, refresh page to clear.</p>
+		<p>Just upload your file in the bookmark above, click 'Process' and let your browser do the work. Supports multiple clipping uploads, new results will be added on, refresh page to clear.</p>
 
-		<p>Don't have a file at the ready? Click process to see it in action with an example of a raw file made from random bits of my own clippings.</p>
+		<p>Don't have a file at the ready? Click process to see it in action with an example of a raw file.</p>
 	</div>
-	<input type="file" id="fileInput" />
-	<button id="process">Process file</button>
-	<br>
-	<br>
-	Only view quotes from:
-	<select id="list-of-authors">
-		<option value="" disabled selected>Select an author</option>
-	</select>
+
+	<div id="author-list">
+		<table id="author-table">
+			<tr><b>Your authors</b> (click to view only their quotes)</tr>
+		</table>
+	</div>
+
 	<br>
 	<select id="list-of-books">
 		<option value="" disabled selected>Select a book</option>
@@ -536,7 +547,7 @@ Night Journey of the Dragon-Horse (Xia Jia)
 
 The avenue he’s on was once this city’s most famous street. Now it is a deep canyon whose craggy walls are formed from an amalgam of bricks, steel, concrete, and trees, the product of mixing the inorganic with the organic, decay with life, reality with dream, the steel-and-glass metropolis with ancient myths. He remembers there was once a square nearby where bright lights remained lit throughout the night like a thousand-year dream. But in the end, the lights went out, and the dream ended. There’s nothing in this world that can outlast time itself.
 ==========
-	</div>
+</div>
 	</div>
 
 	<div class="right-page">

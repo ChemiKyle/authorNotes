@@ -6,7 +6,6 @@ var main = function() {
 	var file = '';
 	var pageNum;
 	var authBookList;
-	var $clientAuthorlist = $('select#list-of-authors');
 	var userSelectedAuthor;
 	var $clientListOfBooks = $('select#list-of-books');
 	var authorName;
@@ -19,8 +18,9 @@ var main = function() {
 	var isNote = '';
 	var pageNum = '';
 	
-	$clientListOfBooks.hide(); // This doesn't quite work yet
 
+	$clientListOfBooks.hide(); // This doesn't quite work yet
+	$('div#author-list').hide();
 
 	document.getElementById("fileInput").addEventListener("change", function() {
 		var r = new FileReader();
@@ -50,7 +50,7 @@ var main = function() {
 			bookTitle = bookTitle.toString();
 			authorName = authorLine.slice(-1)[0].replace(')', '');
 			authorName = authorName.toString();
-			pageNum = '\n - ' + contextLine[0].slice(19);
+			pageNum = '<br> - ' + contextLine[0].slice(19);
 			if (contextLine[0].includes("Note")) {
 				isNote = 'With the next quote, you wrote: ';
 				pageNum = '';
@@ -107,6 +107,13 @@ var main = function() {
 
 
 	$('button#process').click(function() {
+
+		$('#chap-title').empty('slow');
+		$('#chap-title').append('<h3>Contents</h3>');
+
+		$('div#author-list').show( function() {
+			$('div#author-list').fadeIn();
+		});
 		
 		$('div.intro-text').hide('slow', function() {
 			$('div.into-text').remove();
@@ -128,12 +135,14 @@ var main = function() {
 
 		for (var i = 0; i < authorCount; i++) {
 			var thisName = Object.keys(dictionary)[i];
-			$clientAuthorlist.append('<option value="' + i + '">' + thisName + '</option>');
+			$('table#author-table').append('<tr class="author-row" value="'+i+'"><td>'+thisName+'</td></tr>');
+
 			authorIDs[i] = thisName; // Directly calling the author's name as a key returns undefined
 			// If a user's file is parsed and a key is 'Cormac McCarthy', calling dictionary['Cormac McCarthy'] returns undefined
 			// The key as generated from the parsing function is NOT the same as the string,
 			// i.e. even if authorName = 'Cormac McCarthy', (authorName === 'Cormac McCarthy') evaluates as false!
 		};
+		var $clientAuthTableItem = $('table#author-table');
 
 		var auth = 0;
 		$.each(dictionary, function() { // List of books level
@@ -155,9 +164,9 @@ var main = function() {
 					$.each(this, function() { // add individual quotes
 						if ($.inArray(this, alreadyQuoted) == -1) {
 							$content.append('<p class="quote">' + this + '</p>');
-							alreadyQuoted.push(this);
 						}
-						else { };
+						else {
+						};
 					});
 				});
 
@@ -165,13 +174,13 @@ var main = function() {
 			};
 		});
 	$content.fadeIn();
-	});
 
-	$clientAuthorlist.on('change', function() { // Allow user to select an author
+	$clientAuthTableItem.on('click', 'tr', function() { // Allow user to select an author by clicking their name
+		// e.preventDefault();
 
 		$content.empty();
 
-		userSelectedAuthor = this.value;
+		userSelectedAuthor = $(this).attr("value");
 		userSelectedAuthor = authorIDs[userSelectedAuthor];
 
 		$clientListOfBooks.empty();
@@ -191,6 +200,9 @@ var main = function() {
 
 		$content.fadeIn('slow');
 	});
+
+	});
+
 };
 
 

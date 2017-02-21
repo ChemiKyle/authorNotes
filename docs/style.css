@@ -6,6 +6,7 @@
 }
 
 body{
+	height: 100%;
 	background: var(--inner-page-color); /* For browsers that don't support gradients */
 	/* The rest make it look like an old book */
 	background: /* Chrome 25, Safari 6, iOS 6.1, Android 4.3 */
@@ -87,6 +88,10 @@ body{
 	overflow: auto;
 }
 
+#chap-title {
+	text-align: center;
+}
+
 .right-page {
 	padding: 0 2% 0 0;
 	float: right;
@@ -122,4 +127,16 @@ p.quote {
 
 p.books-by {
 	text-decoration: underline;
+}
+
+div#bookmark {
+	background: #b00;
+	position: absolute;
+	display: block;
+	height: auto;
+	padding: 4px;
+}
+
+div#bookmark div {
+	float: right;
 }
