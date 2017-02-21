@@ -22,7 +22,7 @@ var main = function() {
 	$clientListOfBooks.hide(); // This doesn't quite work yet
 	$('div#author-list').hide();
 
-	document.getElementById("fileInput").addEventListener("change", function() {
+	document.getElementById("file-input").addEventListener("change", function() {
 		var r = new FileReader();
 
 		r.onload = function() {
@@ -176,7 +176,6 @@ var main = function() {
 	$content.fadeIn();
 
 	$clientAuthTableItem.on('click', 'tr', function() { // Allow user to select an author by clicking their name
-		// e.preventDefault();
 
 		$content.empty();
 

@@ -11,7 +11,11 @@
 	<div id='top-of-book'></div>
 
 	<div id="bookmark">
-		<div><input type="file" id="fileInput" /></div>
+		<form method="POST" action="myurl"> <span class="btn btn-success fileinput-button">
+        	<span>Select file</span>
+    			<input type="file" id="file-input">
+    		</span>
+	</form>
 		<div><button id="process">Process</button></div>
 	</div>
 
@@ -22,6 +26,8 @@
 		<h3>Introduction</h3>
 	</div>
 
+	<br>
+	
 	<div class="intro-text">
 		<p>Do you ever highlight memorable passages on your kindle, but find it cumbersome to go back over them? <br>
 		We can fix that for you and split your file up by author and book for easier perusal.</p>

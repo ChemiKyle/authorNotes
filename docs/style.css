@@ -81,6 +81,10 @@ body{
     width: 100%;
 }
 
+#process {
+	cursor: pointer;
+}
+
 .left-page {
 	padding: 0 0 0 4%;
 	float: left;
@@ -116,9 +120,10 @@ input span:hover {
 
 div#default-quotes {
 	white-space: pre-wrap;
-	padding: 3% 0 0 0;
+	padding: 3%  0 0;
 	height: 50vh;
 	overflow: auto;
+	margin-right: 20px;
 }
 
 p.quote {
@@ -135,8 +140,54 @@ div#bookmark {
 	display: block;
 	height: auto;
 	padding: 4px;
+	top: -1px;
+	left: 25px;
 }
 
 div#bookmark div {
 	float: right;
+}
+
+
+/*Copied from bootstrap */
+ .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+/*Also */
+ .btn-success {
+/*    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;*/
+}
+/* This is copied from https://github.com/blueimp/jQuery-File-Upload/blob/master/css/jquery.fileupload.css */
+ .fileinput-button {
+    position: relative;
+    overflow: hidden;
+}
+/*Also*/
+ .fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter:'alpha(opacity=0)';
+    font-size: 200px;
+    direction: ltr;
+    cursor: pointer;
 }
