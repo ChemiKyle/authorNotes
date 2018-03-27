@@ -112,7 +112,18 @@ div#author-content {
 	overflow: auto;
 }
 
-pre#author-content{
+pre#author-content {
+	white-space: pre-wrap;
+	font-family: inherit;
+}
+
+div#author-list {
+	padding: 3% 0 0 0;
+	height: 84vh;
+	overflow: auto;
+}
+
+pre#author-list {
 	white-space: pre-wrap;
 	font-family: inherit;
 }
